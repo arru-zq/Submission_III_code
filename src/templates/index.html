@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="catalogue for you" />
+  <link rel="icon" href="./favicon.png">
+  <link rel="apple-touch-icon" href="/icons/icon-192x192.png">
+  <link rel="manifest" href="app.webmanifest" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald&family=Raleway:wght@300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+    crossorigin="anonymous">
+  <title>Menu Restaurant</title>
+</head>
+
+<body>
+  <a href="#mainContent" class="skip-link" tabindex="0">Skip Content</a>
+  <header class="app-bar">
+    <div class="app-bar__menu">
+      <button id="hamburgerButton">☰</button>
+    </div>
+
+    <!-- app-bar_brand -->
+    <div class="app-bar__brand">
+      <h1>Restaurant List</h1>
+    </div>
+
+    <nav id="navigationDrawer" class="app-bar__navigation">
+      <ul>
+        <li><a href="/">Home</a></li>
+        <li><a href="#/Favorite">Favorite</a></li>
+        <li><a href="https://github.com/arru-zq?tab=repositories">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="hero lazyload">
+    <picture>
+      <source media="(max-width: 600px)" srcset="./images/hero-image_2-small.jpg">
+      <img src="./images/hero-image_2-large.jpg" alt="food in table"></img>
+    </picture>
+    <div class="hero__inner">
+      <h1 class="hero__title">Menu Restaurant</h1>
+      <p class="hero__text">Dibuat dalam memenuhi submission ketiga dicoding</p>
+    </div>
+  </div>
+
+  <main id="mainContent"></main>
+
+  <footer>
+    <p>Copyright © - Aldorino Muharram. All rights reserved</p>
+  </footer>
+</body>
+
+</html>

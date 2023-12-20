@@ -1,0 +1,154 @@
+/* Responsive NavBar */
+@media screen and (max-width: 650px) {
+  .restaurant {
+    grid-template-columns: 1fr;
+  }
+
+  .menuDiv {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+
+  .skip-link {
+    left: 70%;
+  }
+  .hero__title {
+    font-size: 2.75em;
+    text-align: center;
+  }
+
+
+  .titleOne {
+    font-size: 1.25em;
+    padding: 20px;
+    padding-bottom: 12px;
+  }
+
+  .titleTwo {
+    font-size: 2.25em;
+    padding-bottom: 12px;
+  }
+
+  .titleThree {
+    font-size: 17px;
+    padding: 15px;
+  }
+
+  .hero__text {
+    font-size: 1em;
+  }
+  .app-bar .app-bar__navigation {
+    background-color: rgb(44, 94, 54, 0.9);
+  }
+
+  .restaurant .restaurant__description {
+    grid-column-start: 1;
+    grid-column-end: 1;
+  }
+
+  .app-bar__brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .app-bar__brand h1 {
+    margin: 0;
+    padding-right: 70px;
+  }
+
+  footer {
+    text-align: center;
+  }
+}
+@media screen and (min-width: 650px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 1px 29px;
+    padding-top: 10px;
+  }
+
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+
+  .app-bar .app-bar__navigation {
+    display: flex;
+    align-items: center;
+    position: static;
+    width: 100%;
+  }
+
+  .app-bar .app-bar__navigation ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .app-bar .app-bar__navigation ul li {
+    margin-right: 10px;
+  }
+
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 12px;
+  }
+}
+
+@media screen and (min-width: 740px) {
+  .app-bar {
+    grid-template-columns: 1fr auto;
+    padding: 1px 29px;
+    padding-top: 10px;
+  }
+
+  .app-bar .app-bar__menu {
+    display: none;
+  }
+
+  .app-bar .app-bar__navigation {
+    position: static;
+    width: 100%;
+  }
+
+  .app-bar .app-bar__navigation ul li {
+    display: inline-block;
+  }
+
+  .app-bar .app-bar__navigation ul li a {
+    display: inline-block;
+    width: 120px;
+    text-align: center;
+    font-size: 1.1em;
+    padding-top: 14px;
+  }
+}
+
+/* Set the grid */
+@media screen and (min-width: 505px) {
+  .restaurant {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@media screen and (min-width: 650px) {
+  .restaurant {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 950px) {
+  .restaurant {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .restaurant {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

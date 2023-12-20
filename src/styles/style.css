@@ -1,0 +1,413 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+}
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  height: 100%;
+  background-color: rgb(250, 250, 248);
+}
+
+/* Header & Footer */
+.app-bar__menu button,
+.app-bar__brand h1,
+.app-bar__navigation ul li a,
+.skip-link,
+.app-bar__navigation {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.app-bar .app-bar__navigation {
+  position: absolute;
+  top: 78px;
+  left: -180px;
+  width: 100px;
+  transition: all 0.3s;
+  overflow: hidden;
+}
+
+.app-bar__navigation.open {
+  left: 0;
+}
+
+.app-bar__brand h1 {
+  color: rgb(255, 255, 255);
+}
+
+.restaurantsContainer h3 a {
+  min-width: 44px;
+  min-height: 44px;
+  display: flex;
+  align-items: center;
+}
+
+.restaurantsContainer h3 {
+  font-size: 18px;
+}
+
+
+.skip-link {
+  z-index: 100000;
+  background-color: #aca0a0;
+  color: #000000;
+  position: absolute;
+  padding: 5px;
+  text-decoration: none;
+  opacity: 0;
+  left: 15%;
+}
+
+.skip-link:focus {
+  opacity: 1;
+}
+
+footer {
+  margin-top: auto;
+  padding: 20px 0;
+  background-color: rgb(44, 94, 54, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+footer p {
+  color: white;
+}
+
+/* NavBar */
+.app-bar {
+  background-color: rgb(44, 94, 54, 0.9);
+  z-index: 333;
+  top: 0;
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+}
+
+.app-bar .app-bar__menu {
+  display: flex;
+  align-items: center;
+}
+
+.app-bar .app-bar__menu button {
+  background-color: transparent;
+  border: none;
+  font-size: 18px;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.divider {
+  border: 3px solid rgb(24, 22, 22, 0.75);
+  border-radius: 4px;
+  margin: 20px 0;
+}
+
+.app-bar__navigation {
+  position: absolute;
+  transition: all 0.3s;
+  top: 75px;
+  left: -180px;
+  width: 150px;
+  overflow: hidden;
+}
+
+ul li a {
+  color: #ffffff;
+  display: inline-block;
+  text-decoration: none;
+  padding: 10px;
+}
+
+/* Jumbotron*/
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 500px;
+  width: 100%;
+  position: relative;
+}
+
+.hero picture {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.hero picture img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+}
+
+.hero__inner {
+  z-index: 10;
+  margin: auto 20px;
+  background-color: rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.hero__title {
+  font-size: 5em;
+  font-weight: 800;
+  padding: 0 32px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.hero__text {
+  text-align: center;
+  color: #e2d7d7;
+  padding-bottom: 10px;
+}
+
+.hero__tagline {
+  margin-top: 16px;
+  font-size: 18px;
+  font-weight: 550;
+  text-align: center;
+}
+
+/* Home Page */
+main {
+  padding: 32px;
+  flex: 1;
+}
+
+.tag {
+  text-align: center;
+}
+
+.titleOne {
+  font-size: 1.25em;
+  padding-bottom: 12px;
+}
+
+.titleTwo {
+  font-size: 3em;
+  padding-bottom: 12px;
+}
+
+.titleThree {
+  font-size: 20px;
+}
+
+.restaurants {
+  display: grid;
+  grid-template-columns: repeat(3fr auto);
+  gap: 16px;
+}
+
+/* card menu */
+.restaurantsContainer {
+  margin-top: 30px;
+  border: 1px solid;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease;
+}
+
+.restaurantsContainer:hover {
+  transform: scale(1.05);
+}
+
+.restaurantsContainer img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px 8px 0 0;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.restaurantsContainer p {
+  margin: 10px;
+}
+
+.restaurant__name a {
+  text-decoration: none;
+  color: #333;
+}
+
+.restaurant__name a:hover {
+  color: green;
+  text-decoration: underline;
+}
+
+.restaurantsContainer .restaurant__name {
+  padding: 10px;
+  background-color: rgb(67, 181, 61, 0.1);
+}
+
+.restaurant {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 18px 16px;
+}
+
+
+/* Like Button */
+.like {
+  width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(44, 94, 54, 0.9);
+  position: fixed;
+  bottom: 16px;
+  right: 16px;
+  border-radius: 50%;
+  border: 0;
+  font-size: 18px;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* detail div */
+.restaurant-detail {
+  width: 90%;
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+.upperDiv {
+  margin: 10px;
+  border: 1px solid;
+  border-color: black;
+  border-radius: 5px;
+  padding: 20px;
+}
+
+.food ul li,
+.drink ul li {
+  list-style: none;
+  padding-top: 4px;
+}
+
+.middleCustomer {
+  padding-top: 4px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.detailPictureTwo {
+  border: 1px solid;
+  border-color: black;
+  height: auto;
+  border-radius: 8px;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+
+/* Agar food & drink menjadi dua column */
+.menuDiv {
+  display: flex;
+  flex-direction: row;
+}
+
+.food,
+.drink {
+  flex: 1;
+  padding: 20px;
+  border: 1px solid;
+  border-color: #000000;
+  background-color: #f9f9f9;
+  margin: 10px;
+  border-radius: 5px;
+}
+
+/* Customer */
+.customerDiv {
+  border: 1px solid;
+  border-color: black;
+  margin: 10px;
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.containerCustomer {
+  margin-top: 10px;
+  border-radius: 5px;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f9f9f9;
+}
+
+.upperNav {
+  border-radius: 5px;
+  border: 1px solid;
+  border-color: black;
+}
+
+.borderContent {
+  margin: 5px;
+  padding: 10px 40px;
+}
+
+.restaurant-detail .detailPicture {
+  width: 100%;
+  height: 100%;
+  max-width: 50%;
+  max-height: 100%;
+  background-size: cover;
+  height: auto;
+  border: 2px solid var(--color-ccc);
+  border-radius: 5px;
+  margin: 10px 0;
+  grid-column-start: 1;
+  grid-column-end: 5;
+}
+
+
+.upperDiv,
+.food,
+.drink,
+.customerDiv {
+  margin-top: 30px;
+  border: 1px solid;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+}
+
+.nothing {
+  font-size: 1em;
+  text-align: justify;
+}
+
+.upperDiv h3{
+  color: rgb(54, 151, 54);
+}
+.upperDiv .restName {
+  font-size: 1.5em;
+}
+
+.food h3,
+.drink h3,
+.customerDiv h3 {
+  font-size: 1.5em;
+  color: rgb(54, 151, 54);
+}

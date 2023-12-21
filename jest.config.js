@@ -9,7 +9,7 @@ const config = {
     '**/tests/**/*.test.[jt]s?(x)',
   ],
 
-  setupFiles: ['fake-indexeddb/auto'],
+  setupFiles: ['fake-indexeddb/auto', 'dotenv/config'],
 
   // The test environment that will be used for testing
   testEnvironment: 'jsdom',
